@@ -8,7 +8,7 @@
     "css": "gulp css"
   },
   "keywords": [
-    "SASS", 
+    "SASS",
     "Gulp"
   ],
   "author": "Fernando Panduro",
@@ -25,7 +25,7 @@
     "sass": "^1.54.9"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.8",
+    "autoprefixer": "^10.4.11",
     "css": "^3.0.0",
     "cssnano": "^5.1.13",
     "gulp-postcss": "^9.0.1",
@@ -33,4 +33,3 @@
     "post": "^0.0.1"
   }
 }
-
