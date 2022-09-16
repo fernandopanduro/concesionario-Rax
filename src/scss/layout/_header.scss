@@ -1,0 +1,25 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.header {
+    background-color: v.$negro;
+    padding: 0 v.$grande;
+    @include m.flex(row, center, space-around, v.$corto);
+};
+
+.header__title {
+    color: v.$blanco;
+    font-weight: 800;
+};
+
+.list {
+    @include m.flex(row, center, space-between, v.$corto);
+}
+
+.list__item {
+    a {
+        color: v.$blanco;
+    }
+}
+
+
