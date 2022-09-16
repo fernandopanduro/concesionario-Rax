@@ -1,17 +1,21 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
 html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
 *, *:before, *:after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 body {
-    font-family: $fuente_principal;
+    font-family: v.$fuente_principal;
     font-size: 1.6rem;
     line-height: 1.8;
 }
 p {
-    color: $negro;
+    color: v.$negro;
     font-size: 2rem;
 }
 .contenedor {
@@ -24,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 img,
 picture {
     width: 100%;
@@ -31,8 +39,8 @@ picture {
 }
 
 h1, h2, h3 {
-    font-family: $fuente_principal;
-    margin: calc($separacion / 2) 0;
+    font-family: v.$fuente_principal;
+    margin: calc(v.$separacion / 2) 0;
     font-weight: 300;
     text-align: center;
     

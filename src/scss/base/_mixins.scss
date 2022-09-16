@@ -21,3 +21,11 @@
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+
+@mixin  flex($direccion, $alinacion, $justificacion, $gap) {
+    display: flex;
+    flex-direction: $direccion;
+    align-items: $alinacion;
+    justify-content: $justificacion;
+    gap: $gap;
+}
