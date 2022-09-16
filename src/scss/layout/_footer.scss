@@ -3,13 +3,17 @@
 
 .footer {
     background-color: v.$negro;
+    z-index: 100;
 
     ul {
         justify-content: space-evenly;
     }
+
+    a {color: v.$blanco;}
 }
 
 .copyrigth {
     color: v.$blanco;
-    text-align: center;
+    text-align: center;  
+
 }
