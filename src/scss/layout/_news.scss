@@ -1,0 +1,66 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.new-content {
+    @include m.flex(row, center, space-evenly, 3rem)
+}
+
+.news__title {
+    font-weight: 700;
+    color: v.$rojo;
+}
+
+.card {
+    max-width: 40rem;
+    border-radius: v.$br;
+    overflow: hidden;
+    padding: v.$mediano;
+    box-shadow: 10px 9px 27px -6px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 10px 9px 27px -6px rgba(0,0,0,0.39);
+    -moz-box-shadow: 10px 9px 27px -6px rgba(0,0,0,0.39);
+    transition: .4s;
+
+    &:hover {
+        background: v.$rojo;
+        transform: translateY(-25px);
+
+        .card-img {
+            width: 110%;
+        }
+
+        .card__content__title {
+            color: v.$blanco;
+        }
+
+        .card__content__paragraph {
+            color: v.$blanco;
+        }
+            
+    }
+}
+
+.card__content-img {
+    width: 100%;
+    border-radius: v.$br;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .4s;
+}
+
+.card__content {
+    @include m.flex(column, center, center, v.$corto)
+}
+
+.card__content__title {
+    font-weight: 400;
+    margin: 0;
+}
+
+.card__content__paragraph {
+    text-align: justify;
+}
