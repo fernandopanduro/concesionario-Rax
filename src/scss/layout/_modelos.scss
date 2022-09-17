@@ -1,0 +1,61 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.modelos {
+    width: 100%;
+    @include m.flex(column, center, space-evenly);
+    background-color: v.$negro;
+}
+
+.modelos__title {
+    color: v.$blanco;
+    font-weight: 900;
+}
+
+.modelo {
+    width: 100%;
+    @include m.flex(row, center,center)
+}
+
+.modelo__img {
+    width: 50%;
+}
+
+.modelo__img img {      
+    width: 100%;
+    height: 70rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.modelo-description {
+    width: 50%;
+    padding: v.$grandexl;
+
+    .btn-link {
+        background: transparent;
+        .btn {
+            border: 1px solid v.$blanco;
+            color: v.$blanco;
+            transition: all .3s;
+
+            &:hover {
+                background-color: v.$blanco;
+                color: v.$negro;
+            }
+        }
+    }
+}
+
+.modelo-description__title {
+    color: v.$blanco;
+    font-weight: 700;
+    text-align: left;
+}
+
+.modelo-description__paragraph {
+    color: v.$blanco;
+    font-weight: 400;
+    max-width: 50rem;
+    text-align: justify;
+}
