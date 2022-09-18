@@ -7,8 +7,14 @@
 
     ul {
         justify-content: space-evenly;
+        a {
+            transition: opacity .3s;
+    
+            &:hover {
+                opacity: .7;
+            }
+        }
     }
-
     a {color: v.$blanco;}
 }
 

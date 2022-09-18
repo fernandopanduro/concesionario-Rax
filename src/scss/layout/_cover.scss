@@ -42,17 +42,3 @@
     }
 }
 
-.btn {
-    width: 27rem;
-    padding: .8rem 3rem;
-    border-radius: v.$br;
-    cursor: pointer;
-    background: transparent;
-    text-transform: uppercase;
-    transition: all .5s;
-
-    &:hover {
-        background-color: v.$negro;
-        color: v.$blanco;
-    }
-}

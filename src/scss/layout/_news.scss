@@ -1,13 +1,108 @@
 @use 'base/mixins' as m;
 @use 'base/variables' as v;
 
+.news {
+    position: relative;
+}
+
+.container-triangle {
+    position: absolute;
+    max-width: 1200px;
+    height: 80rem;
+    background-color: orange;
+}
+
+.triangle1 {
+    @include m.triangle(30rem, 20rem, 30rem);
+    background-image: linear-gradient(to left, rgb(248, 95, 44), rgb(0, 187, 255));
+    animation: t1 8s ease infinite alternate-reverse;
+}
+.triangle2 {
+    @include m.triangle(20rem, 45rem, 110rem);
+    background-image: linear-gradient(to left, rgb(248, 95, 44), rgb(0, 187, 255));
+    animation: t2 16s ease infinite alternate-reverse;
+}
+.triangle3 {
+    @include m.triangle(25rem, 35rem, 70rem);
+    background-image: linear-gradient(to left, rgb(248, 95, 44), rgb(0, 187, 255));
+    animation: t3 10s ease infinite alternate-reverse;
+}
+
+.triangle4 {
+    @include m.triangle(35rem, -5rem, 80rem);
+    background-image: linear-gradient(to left, rgb(248, 95, 44), rgb(0, 187, 255));
+    animation: t4 20s ease infinite alternate-reverse;
+}
+
+@keyframes t1 {
+    0% {
+        transform: rotate(45deg) translateY(0px)
+    }
+
+    50% {
+        transform: rotate(45deg) translateY(15px)
+
+    }
+
+    100% {
+        transform: rotate(45deg) translateY(0px)
+    }
+}
+
+@keyframes t2 {
+    0% {
+        transform: rotate(53deg) translateY(0px)
+    }
+
+    50% {
+        transform: rotate(53deg) translateY(25px)
+
+    }
+
+    100% {
+        transform: rotate(53deg) translateY(0px)
+    }
+}
+
+@keyframes t3 {
+    0% {
+        transform: rotate(45deg) translateY(0px)
+    }
+
+    50% {
+        transform: rotate(45deg) translateY(10px)
+
+    }
+
+    100% {
+        transform: rotate(45deg) translateY(0px)
+    }
+}
+
+@keyframes t4 {
+    0% {
+        transform: rotate(45deg) translateY(0px)
+    }
+
+    50% {
+        transform: rotate(45deg) translateY(20px)
+
+    }
+
+    100% {
+        transform: rotate(45deg) translateY(0px)
+    }
+}
+
 .new-content {
-    @include m.flex(row, center, space-evenly, 3rem)
+    @include m.flex(row, center, space-evenly, 3rem);
+    z-index: 100;
 }
 
 .news__title {
     font-weight: 700;
     color: v.$rojo;
+    margin: 0;
 }
 
 .card {
@@ -19,10 +114,11 @@
     -webkit-box-shadow: 10px 9px 27px -6px rgba(0,0,0,0.39);
     -moz-box-shadow: 10px 9px 27px -6px rgba(0,0,0,0.39);
     transition: .4s;
+    z-index: 100;
 
     &:hover {
         background: v.$rojo;
-        transform: translateY(-25px);
+        transform: translateY(-15px);
 
         .card-img {
             width: 110%;

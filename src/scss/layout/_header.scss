@@ -13,12 +13,17 @@
 };
 
 .list {
-    @include m.flex(row, center, space-between, v.$corto);
+    @include m.flex(row, center, space-between, v.$grande);
 }
 
 .list__item {
     a {
         color: v.$blanco;
+        transition: opacity .3s;
+
+        &:hover {
+            opacity: .7;
+        }
     }
 }
 

@@ -1,0 +1,10 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.btn-blanco {
+    @include m.btn(v.$blanco, v.$negro);
+}
+
+.btn-negro {
+    @include m.btn(v.$negro, v.$blanco);
+}

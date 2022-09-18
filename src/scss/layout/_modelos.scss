@@ -31,20 +31,7 @@
 .modelo-description {
     width: 50%;
     padding: v.$grandexl;
-
-    .btn-link {
-        background: transparent;
-        .btn {
-            border: 1px solid v.$blanco;
-            color: v.$blanco;
-            transition: all .3s;
-
-            &:hover {
-                background-color: v.$blanco;
-                color: v.$negro;
-            }
-        }
-    }
+    @include m.flex(column, flex-start, center, v.$corto);
 }
 
 .modelo-description__title {
@@ -58,4 +45,10 @@
     font-weight: 400;
     max-width: 50rem;
     text-align: justify;
+}
+
+.modelo-description__price {
+    color: v.$blanco;
+    font-weight: 700;
+    max-width: 50rem;
 }
