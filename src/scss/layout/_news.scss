@@ -111,27 +111,24 @@
     -moz-box-shadow: 10px 9px 27px -6px rgba(0,0,0,0.39);
     transition: .4s;
     z-index: 100;
-    border-top: 2px solid rgba(255, 255, 255, 0.39);
-    border-left: 2px solid rgba(255, 255, 255, 0.39);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    .card__content__title {
+        color: v.$blanco;
+    }
 
+    .card__content__paragraph {
+        color: v.$blanco;
+    }
     &:hover {
         background: v.$rojo;
         transform: translateY(-15px);
 
         .card-img {
             width: 110%;
-        }
-
-        .card__content__title {
-            color: v.$blanco;
-        }
-
-        .card__content__paragraph {
-            color: v.$blanco;
-        }
-            
+        }   
     }
 }
 
