@@ -14,38 +14,34 @@
 
 .triangle1 {
     @include m.triangle(30rem, 20rem, 30rem);
-    background-image: linear-gradient(to left, rgb(248, 95, 44), rgb(0, 187, 255));
-    animation: t1 8s ease infinite alternate-reverse;
+    animation: t1 16s ease infinite alternate-reverse;
 }
 .triangle2 {
-    @include m.triangle(20rem, 45rem, 110rem);
-    background-image: linear-gradient(to left, rgb(248, 95, 44), rgb(0, 187, 255));
-    animation: t2 16s ease infinite alternate-reverse;
+    @include m.triangle(20rem, 45rem, 108rem);
+    animation: t2 20s ease infinite alternate-reverse;
 }
 .triangle3 {
-    @include m.triangle(25rem, 35rem, 70rem);
-    background-image: linear-gradient(to left, rgb(248, 95, 44), rgb(0, 187, 255));
-    animation: t3 10s ease infinite alternate-reverse;
+    @include m.triangle(25rem, 37rem, 70rem);
+    animation: t3 24s ease infinite alternate-reverse;
 }
 
 .triangle4 {
-    @include m.triangle(35rem, -5rem, 80rem);
-    background-image: linear-gradient(to left, rgb(248, 95, 44), rgb(0, 187, 255));
-    animation: t4 20s ease infinite alternate-reverse;
+    @include m.triangle(35rem, -8rem, 80rem);
+    animation: t4 30s ease infinite alternate-reverse;
 }
 
 @keyframes t1 {
     0% {
-        transform: rotate(45deg) translateY(0px)
+        transform: rotate(58deg) translateY(0px)
     }
 
     50% {
-        transform: rotate(45deg) translateY(15px)
+        transform: rotate(55deg) translateY(25px)
 
     }
 
     100% {
-        transform: rotate(45deg) translateY(0px)
+        transform: rotate(58deg) translateY(0px)
     }
 }
 
@@ -55,7 +51,7 @@
     }
 
     50% {
-        transform: rotate(53deg) translateY(25px)
+        transform: rotate(55deg) translateY(30px)
 
     }
 
@@ -70,7 +66,7 @@
     }
 
     50% {
-        transform: rotate(45deg) translateY(10px)
+        transform: rotate(50deg) translateY(20px)
 
     }
 
@@ -81,16 +77,16 @@
 
 @keyframes t4 {
     0% {
-        transform: rotate(45deg) translateY(0px)
+        transform: rotate(50deg) translateY(0px)
     }
 
     50% {
-        transform: rotate(45deg) translateY(20px)
+        transform: rotate(55deg) translateY(40px)
 
     }
 
     100% {
-        transform: rotate(45deg) translateY(0px)
+        transform: rotate(50deg) translateY(0px)
     }
 }
 
@@ -115,6 +111,10 @@
     -moz-box-shadow: 10px 9px 27px -6px rgba(0,0,0,0.39);
     transition: .4s;
     z-index: 100;
+    border-top: 2px solid rgba(255, 255, 255, 0.39);
+    border-left: 2px solid rgba(255, 255, 255, 0.39);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 
     &:hover {
         background: v.$rojo;
