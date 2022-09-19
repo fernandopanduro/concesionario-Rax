@@ -9,6 +9,7 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+    color: v.$blanco;
 }
 body {
     font-family: v.$fuente_principal;
@@ -67,4 +68,9 @@ section {
 
 section:last-of-type {
     margin-bottom: 0em;
+}
+
+.contenedor-margen {
+    margin: auto;
+    max-width: 1200px;
 }
