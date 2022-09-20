@@ -18,8 +18,9 @@ body {
     background: v.$negro;
 }
 p {
-    color: v.$negro;
+    color: v.$blanco;
     font-size: 2rem;
+    text-align: justify;
 }
 .contenedor {
     width: 95%;
@@ -39,6 +40,14 @@ img,
 picture {
     width: 100%;
     display: block;
+}
+
+h1 {
+    font-weight: v.$black;
+}
+
+h2 {
+    font-weight: v.$bold;
 }
 
 h1, h2, h3 {

@@ -29,6 +29,7 @@
     flex-direction: $direccion;
     align-items: $alinacion;
     justify-content: $justificacion;
+    flex-wrap: wrap;
     gap: $gap;
 }
 
