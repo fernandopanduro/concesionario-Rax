@@ -4,8 +4,7 @@
 .cover {
     position: relative;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    max-height: auto;
 }
 
 .cover__content {
@@ -13,7 +12,9 @@
     width: 100%;
     height: 100%;
     @include m.flex(column, center, flex-start, v.$mediano);
-    padding-top: 7rem;
+    @include m.tablet {
+        justify-content: center;        
+    };
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, .0));
 }
 
@@ -23,14 +24,20 @@
     color: v.$blanco;
     text-transform: uppercase;
     margin: 0;
+    @include m.tablet {
+        font-size: 3rem;
+    };
 }
 
 .cover__content__paragraph {
     font-weight: 700;
-    font-size: 2.4rem;
-    width: 100rem;
+    font-size: 2.4rem;  
+    max-width: 90rem;
     color: v.$blanco;
     text-align: center;
+    @include m.tablet {
+        font-size: 1.6rem;
+    };
 }
 
 .cover__img {

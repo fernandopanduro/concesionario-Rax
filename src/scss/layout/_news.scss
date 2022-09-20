@@ -8,27 +8,61 @@
 .container-triangle {
     position: absolute;
     max-width: 1200px;
-    height: 80rem;
+    height: auto;
     background-color: orange;
 }
 
+.triangle {
+    z-index: -1;
+}
+
 .triangle1 {
-    @include m.triangle(30rem, 20rem, 30rem);
+    @include m.telefono {
+        @include m.triangle(30rem, -3rem, 7rem);
+        
+    };
     animation: t1 16s ease infinite alternate-reverse;
 }
 .triangle2 {
-    @include m.triangle(20rem, 45rem, 108rem);
+    @include m.telefono {
+        @include m.triangle(20rem, 50rem, 12rem);
+        
+    };
     animation: t2 20s ease infinite alternate-reverse;
 }
 .triangle3 {
-    @include m.triangle(25rem, 37rem, 70rem);
+    @include m.telefono {
+        @include m.triangle(26rem, 100rem, 15rem);
+        
+    };
     animation: t3 24s ease infinite alternate-reverse;
 }
 
 .triangle4 {
-    @include m.triangle(35rem, -8rem, 80rem);
+    @include m.telefono {
+        @include m.triangle(33rem, 150rem, 7rem);
+        
+    };
     animation: t4 30s ease infinite alternate-reverse;
 }
+/* .triangle1 {
+    @include m.triangle(30rem, 20rem);
+    animation: t1 16s ease infinite alternate-reverse;
+}
+.triangle2 {
+        @include m.triangle(20rem, 45rem);
+    
+    animation: t2 20s ease infinite alternate-reverse;
+}
+.triangle3 {
+    @include m.triangle(26rem, 37rem);
+    animation: t3 24s ease infinite alternate-reverse;
+}
+
+.triangle4 {
+    @include m.triangle(36rem, -8rem);
+    animation: t4 30s ease infinite alternate-reverse;
+} */
 
 @keyframes t1 {
     0% {

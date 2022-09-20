@@ -5,7 +5,12 @@
     background-color: v.$negro;
     padding: 0 v.$grande;
     @include m.flex(row, center, space-around, v.$corto);
+    position: relative;
 };
+
+.header-link {
+    z-index: 101;
+}
 
 .header__title {
     color: v.$blanco;
@@ -14,6 +19,9 @@
 
 .list {
     @include m.flex(row, center, space-between, v.$grande);
+    @include m.tablet {
+        display: none;
+    };
 }
 
 .list__item {
@@ -26,5 +34,64 @@
         }
     }
 }
+
+.container-menu {
+    position: absolute;
+    top: -200px;
+    transition: all 1s;
+}
+
+.activecontainer-menu {
+    display: block;
+    position: absolute;
+    background: rgb(61, 61, 61);
+    width: 100%;
+    padding: 3rem;
+    top: 118.4px;
+    z-index: 99;
+}
+
+.list-responsive {
+    @include m.tablet {
+        display: flex;
+        flex-direction: column
+    };
+}
+
+.bars__menu {
+    display: none;
+}
+
+/* Menu Hambuerguesa */
+@include m.tablet {
+    .bars__menu {
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+        @include m.flex(column, center, space-evenly);
+        z-index: 10;
+        span {
+            display: block;
+            height: .3rem;
+            width: 100%;
+            border-radius: .1rem;
+            background-color: v.$blanco;
+            transform-origin: 0 100%;
+            transition: all .3s;
+        }
+    
+        .activeline1__bars-menu {
+            transform: rotate(45deg) translate(-2px, 1px);
+        }
+        .activeline2__bars-menu {
+            opacity: 0;
+            margin-left: -30px;
+        }
+        .activeline3__bars-menu {
+            transform: rotate(-45deg) translate(-4px, 2px);
+        }
+    }
+};
+
 
 

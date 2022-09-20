@@ -1,20 +1,21 @@
 @use 'base/variables' as v;
 
+
 /** Media Queries **/
 @mixin telefono {
-    @media (min-width: #{$telefono}) {
+    @media (max-width: #{v.$telefono}) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media (min-width: #{$tablet}) {
+    @media (max-width: #{v.$tablet}) {
         @content;
     }
 }
   
 @mixin desktop {
-    @media (min-width: #{$desktop}) {
+    @media (max-width: #{v.$desktop}) {
         @content;
     }
 }
@@ -36,10 +37,15 @@
 @mixin btn($color, $color2) {
     width: 27rem;
     padding: .8rem 3rem;
+    @media (max-width: #{v.$telefono}) {
+        font-size: 1.2rem;
+        padding: .8rem 2rem;
+        width: 17rem;
+    }
     border-radius: v.$br;
     cursor: pointer;
     background: transparent;
-    border: ipx solid $color;
+    border: 1px solid $color;
     color: $color;
     text-transform: uppercase;
     transition: all .5s;
