@@ -12,26 +12,43 @@
 
 <!-- Header -->
     <header class="header">
-        <a href="/"><h1 class="header__title">Rex</h1></a>
+        <a href="/" class="header-link"><h1 class="header__title">Rex</h1></a>
         <ul class="list">
             <li class="list__item"><a href="news1.html">Ultima</a></li>
             <li class="list__item"><a href="modelos.html">Modelos</a></li>
             <li class="list__item"><a href="contacto.html">Contacto</a></li>
         </ul>
+
+        <div class="container-menu">
+
+            <ul class="list list-responsive">
+                <li class="list__item"><a href="news1.html">Ultima</a></li>
+                <li class="list__item"><a href="modelos.html">Modelos</a></li>
+                <li class="list__item"><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+        </div>
+
+        <div class="bars__menu">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+        </div>
+
     </header>
 
     <main class="main-new contenedor-margen">
 
         <div class="new-contenedor-img">            
             <picture>
-                <source srcset="build/img/ferrari458.avif" type="image/avif">
-                <source srcset="build/img/ferrari458webp" type="image/webp">
-                <img loading="lazy" width="200" height="300" src="build/img/ferrari458.jpg" alt="Ferrari 458">
+                <source srcset="build/img/Buggati.avif" type="image/avif">
+                <source srcset="build/img/Buggati.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/Buggati.jpg" alt="Bugatti">
             </picture>
         </div>
 
         <section class="new-description">
-            <h1 class="new__title">Los autos italianos etan que arden con el nuevo Ferrari 458</h1>
+            <h1 class="new__title">El Bugatti que rompio todos los records</h1>
             <p class="new__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere explicabo et ex amet repellendus voluptatum officiis, facilis dignissimos enim molestias minima quae quod dolor quidem debitis labore fuga modi, itaque architecto similique odit illum. Accusamus eius voluptatem quis inventore.</p>
             <p class="new__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maxime ipsa velit vitae molestiae minus deleniti, alias incidunt mollitia ipsum aliquid id harum, eaque placeat? Omnis inventore in sit, explicabo praesentium facilis atque nemo sequi similique, tempore maiores magni voluptate eaque neque voluptatum eligendi odit necessitatibus aut. Numquam accusamus quidem earum, temporibus voluptatum, modi aperiam, odio ducimus ratione consectetur unde.</p>
             <p class="new__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla suscipit soluta quibusdam officia doloribus vitae. Enim voluptatibus omnis, culpa quis nostrum temporibus delectus magnam quo, rem quaerat est, ipsum itaque.</p>
@@ -49,6 +66,8 @@
         </ul>
         <p class="copyrigth">Todos los derechos reservados a <strong><a href="/">Rex</a></strong> &copy;</p>
     </footer>
-    
-    </body>
-    </html>
+
+<script src="build/js/app.js"></script>
+
+</body>
+</html>

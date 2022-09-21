@@ -12,12 +12,29 @@
 
 <!-- Header -->
     <header class="header">
-        <a href="/"><h1 class="header__title">Rex</h1></a>
+        <a href="/" class="header-link"><h1 class="header__title">Rex</h1></a>
         <ul class="list">
             <li class="list__item"><a href="news1.html">Ultima</a></li>
             <li class="list__item"><a href="modelos.html">Modelos</a></li>
             <li class="list__item"><a href="contacto.html">Contacto</a></li>
         </ul>
+
+        <div class="container-menu">
+
+            <ul class="list list-responsive">
+                <li class="list__item"><a href="news1.html">Ultima</a></li>
+                <li class="list__item"><a href="modelos.html">Modelos</a></li>
+                <li class="list__item"><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+        </div>
+
+        <div class="bars__menu">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+        </div>
+
     </header>
 
     <main class="main-new contenedor-margen">
@@ -49,6 +66,8 @@
         </ul>
         <p class="copyrigth">Todos los derechos reservados a <strong><a href="/">Rex</a></strong> &copy;</p>
     </footer>
-    
-    </body>
-    </html>
+
+<script src="build/js/app.js"></script>
+
+</body>
+</html>
