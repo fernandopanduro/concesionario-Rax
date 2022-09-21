@@ -4,7 +4,8 @@
 .contacto {
     position: relative;
     width: 100%;
-    height: 30rem;
+    max-height: 30rem;
+    min-height: 20rem;
 }
 
 .contacto__content {
@@ -15,19 +16,27 @@
 }
 
 .contacto__content__title {
-    color: v.$blanco;
     font-weight: 900;
+    font-size: 3rem;
     margin: 0;
+
+    @include m.tablet {
+        font-size: 4.8rem;
+    };
 }
 
 .contacto__content__paragraph {
-    color: v.$blanco;
+    font-size: 1.6rem;
+    text-align: center;
+    @include m.tablet {
+        font-size: 2.4rem;
+    };
 }
 
 .content__video {
     position: absolute;
     width: 100%;
-    max-height: 100%;
+    max-height: 30rem;
     object-fit: cover;
     object-position: center center;
     z-index: -1;
