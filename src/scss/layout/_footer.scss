@@ -1,11 +1,20 @@
 @use 'base/mixins' as m;
 @use 'base/variables' as v;
 
+body {
+    position: relative;
+}
+
 .footer {
+    margin-top: 10rem;
     background-color: v.$negro;
     z-index: 100;
+    position: static;
+    bottom: 0;
+    width: 100%;
 
     ul {
+        display: flex;
         justify-content: space-evenly;
         a {
             transition: opacity .3s;
@@ -15,11 +24,9 @@
             }
         }
     }
-    a {color: v.$blanco;}
 }
 
 .copyrigth {
-    color: v.$blanco;
     text-align: center;  
-
+    font-size: 1.6rem;
 }
