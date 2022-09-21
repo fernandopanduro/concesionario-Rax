@@ -72,7 +72,7 @@
 }
 
 .triangle5 {
-    @include m.triangle(10rem, 60rem, 20rem);
+    @include m.triangle(10rem, 50rem, 20rem);
     
     @include m.tablet {
         @include m.triangle(10rem, 55rem, 55rem);
@@ -86,7 +86,7 @@
 }
 
 .triangle6 {
-    @include m.triangle(15rem, 100rem, 30rem);
+    @include m.triangle(15rem, 120rem, 30rem);
     
     @include m.tablet {
         @include m.triangle(15rem, 90rem, 20rem);

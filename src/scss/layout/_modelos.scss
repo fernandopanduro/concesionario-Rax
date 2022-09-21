@@ -3,22 +3,35 @@
 
 .modelos {
     width: 100%;
-    @include m.flex(column, center, space-evenly);
-    background-color: v.$negro;
+    @include m.flex(column, center, space-evenly, v.$grande);
 }
 
 .modelos__title {
-    color: v.$blanco;
     font-weight: 900;
 }
 
 .modelo {
+    @include m.flex(column-reverse, center, center, v.$grande);
     width: 100%;
-    @include m.flex(row, center,center)
+    @include m.tablet {
+        flex-direction: row;
+        gap: 0;
+    };
+}
+
+.modelo:nth-child(odd) {
+    @include m.flex(column, center, center, v.$grande);
+    @include m.tablet {
+        flex-direction: row;
+        gap: 0;
+    };
 }
 
 .modelo__img {
+    width: 100%;
+    @include m.tablet {
     width: 50%;
+    };
 }
 
 .modelo__img img {      
@@ -29,26 +42,26 @@
 }
 
 .modelo-description {
-    width: 50%;
-    padding: v.$grandexl;
+    width: 100%;
+    padding: v.$grande;
     @include m.flex(column, flex-start, center, v.$corto);
+    @include m.tablet {
+    width: 50%;
+    };
 }
 
 .modelo-description__title {
-    color: v.$blanco;
     font-weight: 700;
     text-align: left;
 }
 
 .modelo-description__paragraph {
-    color: v.$blanco;
     font-weight: 400;
     max-width: 50rem;
     text-align: justify;
 }
 
 .modelo-description__price {
-    color: v.$blanco;
     font-weight: 700;
     max-width: 50rem;
 }
