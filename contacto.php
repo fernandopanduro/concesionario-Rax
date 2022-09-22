@@ -46,9 +46,8 @@
     
                 <div class="contenedor-label">
                     <label class="label" for="dudas">Dudas: </label>
-                    <textarea name="" placeholder="Tus Dudas..." id="dudas" cols="30" rows="10"></textarea>
+                    <textarea name="" placeholder="Tus Dudas..." id="dudas"></textarea>
                 </div>
-    
     
             </fieldset>
     
