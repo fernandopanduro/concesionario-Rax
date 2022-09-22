@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concesionario</title>
-    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="/build/css/app.css">
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 </head>
 <body>

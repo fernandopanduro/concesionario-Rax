@@ -10,7 +10,7 @@
         <p class="copyrigth">Todos los derechos reservados a <strong><a href="/">Rex <?php echo date('Y'); ?> &copy;</a></strong></p>
     </footer>
 
-<script src="build/js/app.js"></script>
+<script src="/build/js/app.js"></script>
 
 </body>
 </html>
