@@ -4,28 +4,42 @@
 .main-new {
 
     .new-contenedor-img {
-        height: 95rem;
+            height: 45rem;
+            @include m.tablet {
+                height: 67rem;
+            };
+            @include m.desktop {
+                height: 88rem;
+            };
     }
 
     img {
         object-fit: cover;
         object-position: center center;
-        height: 95rem;
-
+        height: 45rem;
+        @include m.tablet {
+            height: 67rem;
+        };
+        @include m.desktop {
+            height: 88rem;
+        };
     }
     margin-bottom: 7rem;
 }
 
 .new-description {
-    @include m.flex(column, center, center, v.$mediano)
+    @include m.flex(column, center, center, v.$mediano);
+    padding: v.$mediano;
 }
 
 .new__title {
     font-weight: 900;
     text-align: left;
     margin: 0;
+    font-size: 3.0rem;
 }
 
 .new__paragraph {
     line-height: 33px;
+    font-size: 1.6rem;
 }
