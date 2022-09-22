@@ -37,7 +37,7 @@
     };
 
     @include m.desktop {
-        @include m.triangle(20rem, 13rem, 67rem);
+        @include m.triangle(20rem, 5rem, 75rem);
     };
 
     
@@ -51,7 +51,7 @@
     };
 
     @include m.desktop {
-        @include m.triangle(26rem, 33rem, 37rem);
+        @include m.triangle(26rem, 40rem, 37rem);
     };
 
     animation: t3 24s ease infinite alternate-reverse;
@@ -79,7 +79,7 @@
     };
 
     @include m.desktop {
-        @include m.triangle(10rem, -3rem, 85rem);
+        @include m.triangle(10rem, -3rem, 100rem);
     };
 
     animation: t5 12s ease infinite alternate-reverse;
@@ -165,7 +165,7 @@
     }
 
     50% {
-        transform: rotate(55deg) translateY(40px)
+        transform: rotate(55deg) translateY(20px)
 
     }
 
@@ -247,7 +247,13 @@
 }
 
 .card__content {
-    @include m.flex(column, center, center, v.$corto)
+    @include m.flex(column, center, center, v.$corto);
+    hr {
+        width: 100%;
+        border: none;
+        height: 1px;
+        background-color: white;
+    }
 }
 
 .card__content__title {
@@ -257,4 +263,9 @@
 
 .card__content__paragraph {
     text-align: justify;
+    font-size: 1.6rem;
+}
+
+.icons {
+    @include m.flex(row, center, space-evenly, 3rem);
 }
