@@ -13,13 +13,13 @@
         var_dump($_POST);
         echo '</pre>';
 
-        $nombre = $_POST['nombre'];
+        /* $nombre = $_POST['nombre'];
         $precio = $_POST['precio'];
         $descripcion = $_POST['descripcion'];
         $asientos = $_POST['asientos'];
         $tipo = $_POST['tipo'];
         $motor = $_POST['motor'];
-        $vendedores_id = $_POST['vendedores_id'];
+        $vendedores_id = $_POST['vendedores_id']; */
     
         // Insertar en la base de datos
     
