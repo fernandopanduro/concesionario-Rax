@@ -1,6 +1,6 @@
 <h1 align="center"> 🏎️ Concesionario 🏎️ </h1>
 
-<p align="center"> Concesionario para conocer y comprar vehiculos de la mayor gama no disponible en el mercado comun, Solo se vende autos a personas selectectas.  </p> 
+<p align="center"> Concesionario para conocer y comprar vehiculos de la mayor gama no disponible en el mercado comun.  </p> 
 
 
 
