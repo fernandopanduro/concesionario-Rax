@@ -1,10 +1,10 @@
 <h1 align="center"> 🏎️ Concesionario 🏎️ </h1>
 
-<p align="center"> 🔴 Concesionario para conocer y comprar vehiculos de la mayor gama no disponible en el mercado comun, Solo se vende autos a personas selectectas. 👑  </p> 
+<p align="center"> Concesionario para conocer y comprar vehiculos de la mayor gama no disponible en el mercado comun, Solo se vende autos a personas selectectas.  </p> 
 
 
 
-https://user-images.githubusercontent.com/92656447/197407520-96db4cc8-e1ec-45bb-8a17-3cf4500b5bf6.mp4
+https://user-images.githubusercontent.com/92656447/197409072-5f26714d-bcb1-44ee-b7dc-48aa5ed9c8cf.mp4
 
 
 
@@ -22,7 +22,7 @@ https://user-images.githubusercontent.com/92656447/197407520-96db4cc8-e1ec-45bb-
 Bifurcar el repositorio. luego clone el repositorio localmente haciendo:
 
 ```bash
-git clone https://github.com/fernandopanduro/concesionario-Rex.git
+git clone https://github.com/fernandopanduro/concesionario-Rax.git
 ```
 
 ### Paso 2: Instalar las dependencias
